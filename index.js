@@ -1,6 +1,18 @@
-function isPalindrome(word) {
+function isPalindrome(string) {
   // Write your algorithm here
+  //This is a palindrome code solution using while loop
+  let length = string.length
+  let half_way = (length / 2);
+  let i = 0;
+  while(i < half_way){
+    if (string[i] !== string[length - 1-i]){
+      return false;
+    }
+    i++;
+    return true;
+  }
 }
+
 
 /* 
   Add your pseudocode here
